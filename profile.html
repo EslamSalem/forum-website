@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>profile</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  <script type="text/javascript">
+  var a,b,c,e,z,q,v,w,s,n;
+
+  a=localStorage.getItem("username1");
+  b=localStorage.getItem("firstname1");
+  c=localStorage.getItem("lastname1");
+  e=localStorage.getItem("birthday1");
+  z=localStorage.getItem("birthmonth1");
+  q=localStorage.getItem("birthyear1");
+  v=localStorage.getItem("Gender1");
+  s=localStorage.getItem("email1");
+  n=localStorage.getItem("phone1");
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="Book_Club_Title.png" height="50" alt="Book Club title image" align="left"/>
+    <h3 id="welcome">Welcome <span><script type="text/javascript">document.write(a)</script></span> to the book club!</h3>
+    <nav>
+      <table id=navigate>
+        <tr>
+          <td id="navtd"><a id="navlink" href="home.html">Home</a></td>
+          <td id="navtd"><a id="navlink" href="about.html">About</td>
+            <td id="navtd"><a id="navlink" href="profile.html">Profile</td>
+              <td id="navtd"><a id="navlink" href="login.html">Logout</td>
+                  </tr>
+                </table>
+              </nav>
+            </header>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2" align="left">User Information</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="Profile_pic.png" height="200" alt="Demo Profile image" align="left"/></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>User Name: </td>
+                    <td id="description"><script type="text/javascript">
+                    document.write(a);
+                    </script>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Full Name: </td>
+                  <td id="description"><script type="text/javascript">
+                  document.write(b);
+                  </script>   <script type="text/javascript">
+                  document.write(c);</script>
+                </td>
+              </tr>
+              <tr>
+                <td>Birth Date: </td>
+                <td id="description"><script type="text/javascript">
+                document.write(e);
+                </script> / <script type="text/javascript">
+                document.write(z);
+                </script> / <script type="text/javascript">
+                document.write(q);
+                </script>
+              </td>
+            </tr>
+            <tr>
+              <td>Gender: </td>
+              <td id="description"><script type="text/javascript">
+              document.write(v);
+              </script></td>
+            </tr>
+            <tr>
+              <td>Email: </td>
+              <td id="description"><script type="text/javascript">
+              document.write(s);
+              </script></td>
+            </tr>
+            <tr>
+              <td>Phone: </td>
+              <td id="description"><script type="text/javascript">
+              document.write(n);
+              </script></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td id="footer" colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </body>
+    <footer>
+    This site was developed by<br>HexaCrew, <br> 2020
+    </footer>
+
+
+</html>

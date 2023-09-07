@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+    <script type="text/javascript">
+    var a;
+
+    a= localStorage.getItem("username");
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="Book_Club_Title.png" height="50" alt="Book Club title image" align="left"/>
+      <h3 id="welcome">Welcome <span><script type="text/javascript">document.write(a)</script></span> to the book club!</h3>
+      <nav>
+        <table id=navigate>
+          <tr>
+            <td id="navtd"><a id="navlink" href="home.html">Home</a></td>
+            <td id="navtd"><a id="navlink" href="about.html">About</td>
+            <td id="navtd"><a id="navlink" href="profile.html">Profile</td>
+            <td id="navtd"><a id="navlink" href="login.html">Logout</td>
+          </tr>
+        </table>
+      </nav>
+    </header>
+
+    <div>
+      <aside>
+      <img src="2.jpg" alt="" id="menuImage">
+      </aside>
+      <main>
+        <table id="menuTable">
+          <thead>
+            <tr>
+              <th colspan="2" align="left">Forum Menu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <menu>
+              <tr>
+                <td><li><a href="general_discussion.html">General discussion</a></li></td>
+                <td id="description">- General talks about books</td>
+              </tr>
+              <tr>
+                <td><li><a href="writing.html">Writing</a></li></td>
+                <td id="description">- Check for ideas with others for something to write about</td>
+              </tr>
+              <tr>
+                <td><li><a href="short_stories.html">Short Stories</a></li></td>
+                <td id="description">- Share and discuss short stories</td>
+              </tr>
+              <tr>
+                <td><li><a href="recommendations.html">Recommendations</a></li></td>
+                <td id="description">- Find recommendations made by fellow book fans</td>
+              </tr>
+              <tr>
+                <td><li><a href="critique.html">Critique</a></li></td>
+                <td id="description">- Ask for help and advice to your own writing or critique others</td>
+              </tr>
+            </menu>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td id="footer" colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+    </div>
+    <aside>
+      <div class="slidershow middle">
+
+        <div class="slides">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <input type="radio" name="r" id="r3">
+          <input type="radio" name="r" id="r4">
+          <input type="radio" name="r" id="r5">
+          <div class="slide s1">
+            <img src="1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="4.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+          <label for="r4" class="bar"></label>
+          <label for="r5" class="bar"></label>
+        </div>
+      </div>
+    </aside>
+    </body>
+    <footer>
+    This site was developed by<br>HexaCrew, <br> 2020
+    </footer>
+
+
+</html>

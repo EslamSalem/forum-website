@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Critique</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+    var a;
+    a= localStorage.getItem("username");
+    </script>
+  </head>
+    <header>
+      <img src="Book_Club_Title.png" height="50" alt="Book Club title image" align="left"/>
+      <h3 id="welcome">Welcome <span><script type="text/javascript">document.write(a)</script></span> to the book club!</h3>
+      <nav>
+        <table id=navigate>
+          <tr>
+            <td id="navtd"><a id="navlink" href="home.html">Home</a></td>
+            <td id="navtd"><a id="navlink" href="about.html">About</td>
+            <td id="navtd"><a id="navlink" href="profile.html">Profile</td>
+            <td id="navtd"><a id="navlink" href="login.html">Logout</td>
+          </tr>
+        </table>
+      </nav>
+    </header>
+    <div id="container"></div>
+    <script>
+    var page = "Critique";
+    createPosts(page);
+    Table(page);
+    </script>
+    <div id="general">
+        <div id="box">
+            <textarea  id="subject" placeholder="Your topic..." rows="1" cols="20"></textarea>
+            <textarea  id="desc" placeholder="Describe The Topic..." rows="1" cols="20"></textarea><br />
+            <textarea id="content" placeholder="Write here..." rows="4" cols="30"></textarea><br />
+            <button type="button" id="sbmt">Submit</button>
+        </div>
+    </div>
+    <footer>
+    This site was developed by<br>HexaCrew, <br> 2020
+    </footer>
+
+</html>

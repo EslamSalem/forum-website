@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="style.css" >
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+  var a;
+  a= localStorage.getItem("username");
+  </script>
+</head>
+<header>
+  <img src="Book_Club_Title.png" height="50" alt="Book Club title image" align="left"/>
+  <h3 id="welcome">Welcome <span><script type="text/javascript">document.write(a)</script></span> to the book club!</h3>
+  <nav>
+    <table id=navigate>
+      <tr>
+        <td id="navtd"><a id="navlink" href="home.html">Home</a></td>
+        <td id="navtd"><a id="navlink" href="about.html">About</td>
+        <td id="navtd"><a id="navlink" href="profile.html">Profile</td>
+        <td id="navtd"><a id="navlink" href="login.html">Logout</td>
+      </tr>
+    </table>
+  </nav>
+</header>
+<body>
+  <article>
+    <h1>About Us</h1>
+    <h2>Our Mission :</h2>
+    <p>Book club uses books and creative writing to waken youth in Egypt.
+      Through creative expression,<br>job readniess training, and violence prevention outreach,
+      these young potes achieve their educatin and career goals,<br>and become powerful voices for change in the community</p><hr>
+    <h2>Our vision :</h2>
+    <p>That every young receives the necessary tools,<br>
+      inspiration, and community support to pursue education and follow apositive new path in life</p><hr>
+    <h2>Whom we serve :</h2>
+    <p>Book club serves teenagers and every one have apassion and love for readingss</p>
+  </article>
+  </body>
+  <footer>
+  This site was developed by<br>HexaCrew, <br> 2020
+  </footer>
+</html>

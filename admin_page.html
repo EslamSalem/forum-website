@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="Book_Club_Title.png" height="50" alt="Book Club title image" align="left"/>
+      <h3 id="welcome">Welcome admin to the book club!</h3>
+      <div class="returnLogin">
+        <a href="login.html"><input type="button" id="returnButton" value="logout"></a>
+      </div>
+    </header>
+    <body>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" align="left">Admin Board</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Total Number of Posts: <span id=postNum></span></td>
+              <td>Change body color: <button type="button" style="display: inline-table; margin-left: 80px;" onclick="defaultBody();">Default</button><button type="button" style="display: inline" onclick="greenBody();">Green</button><button type="button" style="display: inline" onclick="redBody();">Red</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </body>
+    <script>
+      countPost();
+      GeneralTable("General Discussion");
+      WritingTable("Writing");
+      StoriesTable("Short Stories");
+      RecommendTable("Recommendations");
+      CritiqueTable("Critique");
+    </script>
+    <footer>
+    This site was developed by<br>HexaCrew, <br> 2020
+    </footer>
+</html>
